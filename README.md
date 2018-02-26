@@ -1,4 +1,4 @@
-# AzureRM-Helpers [![Build status](https://ci.appveyor.com/api/projects/status/9m3gk7n9ywuj3do6/branch/master?svg=true)](https://ci.appveyor.com/project/Oliver-Lii/azurerm-Helpers/branch/master) [![GitHub license](https://img.shields.io/github/license/Oliver-Lii/AzureRM-Helpers.svg)](LICENSE) [![PowerShell Gallery](https://img.shields.io/powershellgallery/v/AzureRM-Helpers.svg)]()
+# AzureRM-Helpers [![Build status](https://ci.appveyor.com/api/projects/status/xmaf7jtlgayb444o/branch/master?svg=true)](https://ci.appveyor.com/project/Oliver-Lii/azurerm-Helpers/branch/master) [![GitHub license](https://img.shields.io/github/license/Oliver-Lii/AzureRM-Helpers.svg)](LICENSE) [![PowerShell Gallery](https://img.shields.io/powershellgallery/v/AzureRM-Helpers.svg)]()
 
 
 This module was written to assist working with Azure Resource Manager Resources. Additional functionality may be added later and I will use this as a generic module to house Powershell functions specific to working with Azure Resource Manager Resources.
