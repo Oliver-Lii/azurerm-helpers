@@ -23,6 +23,9 @@ Login-AzureRmAccount
 # Select the subscription
 Select-AzureRmSubscription -Subscription "Azure Subscription"
 
+# Import the module
+Import-Module AzureRM-Helpers
+
 # Remove a Resource Manager VM using the VM and Resource Group name
 Remove-AzureRMHelperVM -Name AzureRMVM -ResourceGroupName ResourceGroup -Verbose
 
