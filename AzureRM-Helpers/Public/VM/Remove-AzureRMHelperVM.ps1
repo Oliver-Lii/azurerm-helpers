@@ -100,10 +100,10 @@ Function Remove-AzureRMHelperVM
             Write-Verbose "Removing Vhd OS Disk [$($vmOSDiskDetails.Blob)] in container [$($vmOSDiskDetails.Container)] in storage account [$($vmOSDiskDetails.StorageAccountName)]"
             Remove-AzureStorageBlob -Blob $vmOSDiskDetails.Blob -Container $vmOSDiskDetails.Container
 
-            $rmVMDisks = $azureRMVMDisks | Where-Object {$_.ICloudBlob.Properties.LeaseStatus -eq "Unlocked"}
+            $rmVMDisks = $azureRMVMDisks
             foreach($vhd in $rmVMDisks)
             {
-                $vhdStorageAccountName = (Get-AzureVhdDetailFromUri $vhd.ICloudBlob.StorageUri.PrimaryUri).StorageAccountName
+                $vhdStorageAccountName = (Get-AzureRMHelperVhdInfoFromUri $vhd.ICloudBlob.StorageUri.PrimaryUri).StorageAccountName
                 Set-AzureRmCurrentStorageAccount -context $vhd.Context | Out-Null
                 Write-Verbose "Removing Vhd Data Disk [$($vhd.Name)] in container [$($vhd.ICloudBlob.Container.Name)] in storage account [$($vhdStorageAccountName)]"
                 Remove-AzureStorageBlob -CloudBlob $vhd.ICloudBlob
