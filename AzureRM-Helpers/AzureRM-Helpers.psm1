@@ -1,4 +1,4 @@
-#Requires -Modules AzureRM
+#Requires -Modules AzureRM.Compute, AzureRM.Storage, AzureRM.Network
 
 # Get public and private function definition files.
 $Public  = @( Get-ChildItem -Path $PSScriptRoot\Public\*.ps1 -Recurse -ErrorAction SilentlyContinue )
