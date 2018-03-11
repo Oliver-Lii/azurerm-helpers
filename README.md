@@ -38,18 +38,21 @@ $azureRMVirtualMachine | Remove-AzureRMHelperVM
 
 Below is a list of the available functions in the module
 
-[Disks](https://github.com/Oliver-Lii/azurerm-helpers/tree/master/AzureRM-Helpers/Public/Disks "StatusCake Alerts")
+[Disks](https://github.com/Oliver-Lii/azurerm-helpers/tree/master/AzureRM-Helpers/Public/Disks "AzureRM Disks")
 *  Get-AzureRMHelperVhdInfoFromUri
 *  Get-AzureRMHelperVMDataDisks
 *  Get-AzureRmVMOSDiskInfo
 
-[NetworkInterfaces](https://github.com/Oliver-Lii/azurerm-helpers/tree/master/AzureRM-Helpers/Public/NetworkInterfaces "StatusCake Contact Groups")
+[IDs](https://github.com/Oliver-Lii/azurerm-helpers/tree/master/AzureRM-Helpers/Public/IDs "AzureRM IDs")
+*  Get-AzureRMHelperResourceInfoFromID
+
+[NetworkInterfaces](https://github.com/Oliver-Lii/azurerm-helpers/tree/master/AzureRM-Helpers/Public/NetworkInterfaces "AzureRM Network Interfaces")
 *  Get-AzureRMHelperVMNicInfo
 
-[PublicIPAddresses](https://github.com/Oliver-Lii/azurerm-helpers/tree/master/AzureRM-Helpers/Public/PublicIPAddresses "StatusCake Maintenance Windows")
+[PublicIPAddresses](https://github.com/Oliver-Lii/azurerm-helpers/tree/master/AzureRM-Helpers/Public/PublicIPAddresses "AzureRM Public IP Addresses")
 *  Get-AzureRMHelperVMPublicIPAddress
 
-[VM](https://github.com/Oliver-Lii/azurerm-helpers/tree/master/AzureRM-Helpers/Public/VM "StatusCake PageSpeed Tests")
+[VM](https://github.com/Oliver-Lii/azurerm-helpers/tree/master/AzureRM-Helpers/Public/VM "AzureRM VMs")
 *  Remove-AzureRMHelperVM
 
 
